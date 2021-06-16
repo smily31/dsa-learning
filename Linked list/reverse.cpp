@@ -1,9 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Linked list implementation
-
-// node using class -> whenever new node is made this will execute
 class node
 {
     public:
@@ -17,6 +14,9 @@ class node
         }
 };
 
+// INSERTION -> inserting a node
+
+//insert at end
 void insertAtTail(node* &head, int val)
 {
     //initialising new node
@@ -45,6 +45,27 @@ void insertAtHead(node* &head, int val)
     head = n;
 }
 
+
+// Reversing a linked list
+
+// iterative method
+node* reverse(node* &head)
+{
+    node* prev = NULL;
+    node* cur = head;
+    node* nxt;
+    while(cur != NULL)  //when cur node reach to null and prev to last node
+    {
+        nxt = cur->next;
+        cur->next = prev;
+        prev = cur;
+        cur = nxt;
+    }
+    // pointing head to prev as prev is pointing to last node which is now first node
+    return prev;
+}
+
+
 // displaying the linked list
 void display(node* head)
 {
@@ -57,18 +78,7 @@ void display(node* head)
     cout<<"NULL"<<endl;
 }
 
-//searching a node
-bool search(node* head, int k)   //here head is passed by value hence it not alter linkedlist
-{
-    while(head!=NULL)
-    {
-        // node* temp=head;
-        if(head->data == k)
-            return true;
-        head = head->next ;
-    }
-    return false;
-}
+
 // main function
 int main()
 {
@@ -76,9 +86,9 @@ int main()
     insertAtTail(head,1);
     insertAtTail(head,2);
     insertAtTail(head,3);
+    insertAtTail(head,4);
     display(head);
-    insertAtHead(head,4);
-    display(head);
-    cout<<search(head,1);
+    node* newhead = reverse(head); 
+    display(newhead);
     return 0;
 }
