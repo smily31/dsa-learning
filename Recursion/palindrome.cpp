@@ -4,6 +4,9 @@ using namespace std;
 // to check a string is palindrome or not 
 // recursion practice
 
+// TC- O(n)  --> T(n) =T(n-2)+(1)
+// AS- O(n) or theta(n)
+
 int checkPalindrome(string s, int i, int n)
 {
     if(i>=n/2)

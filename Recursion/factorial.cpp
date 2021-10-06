@@ -7,7 +7,7 @@ using namespace std;
 int factorial(int n)
 {
     if(n<=1)
-        return n;
+        return 1;
     
     return n * factorial(n-1);    // recurrence relation
 }
