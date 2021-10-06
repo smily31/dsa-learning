@@ -100,7 +100,7 @@ void deletion(node* &head, int val)
 // displaying the linked list
 void display(node* head)
 {
-    node* temp=head;
+    node* temp=head;   // no need to take temp as head is pass by value
     while(temp!=NULL)
     {
         cout<<temp->data<<"->";
