@@ -8,6 +8,7 @@ using namespace std;
 
 // TC - O(n^2)  in avg and worst case
 // TC - O(n) in best case(when your array is already sorted)
+// SC - O(1)
 
 void insertionSort(int arr[], int n)
 {

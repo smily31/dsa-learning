@@ -39,11 +39,16 @@ void bubbleOptimised(int arr[], int n)
         {
             // if(arr[i] > arr[j])       // for Ascending order
             if (arr[j] < arr[j + 1]) // for Descending order
+            {
                 swap(arr[j], arr[j + 1]);
-            isSwapped = true;
+                isSwapped = true;
+            }    
         }
         if (!isSwapped)
+        {
+            cout<<"optimised hai \n";
             break;
+        }
     }
 }
 
@@ -58,10 +63,11 @@ void print(int arr[], int n)
 // main function
 int main()
 {
-    int arr[10] = {8, 7, 5, 9, 0, 1, 8, 6, 6, 3};
-    bubble(arr, 10);
-    print(arr, 10);
-    bubbleOptimised(arr, 10);
-    print(arr, 10);
+    // int arr[10] = {8, 7, 5, 9, 0, 1, 8, 6, 6, 3};
+    // bubble(arr, 10);
+    // print(arr, 10);
+    int arr[5] = {8,7,6,5,4};
+    bubbleOptimised(arr, 5);
+    print(arr, 5);
     return 0;
 }

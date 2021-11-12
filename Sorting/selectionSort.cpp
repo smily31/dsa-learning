@@ -1,12 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// SELECTION SORT ALGORITHM -> Does les memory writes compared to QS, MS, IS, etc.
+// SELECTION SORT ALGORITHM -> Does less memory writes compared to QS, MS, IS, etc.
 // But Cycle sort is optimal in terms of memory writes
 
 // It is Basic Idea for HEAP SORT
 // Not Stable
 // In Place
+
+// TC in all case - O(n^2)
+// SC - O(1)
 
 void swap(int &a, int &b)
 {
