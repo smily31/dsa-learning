@@ -27,7 +27,7 @@ to find largest , maximum , minimum , etc kind of thing
 ***Variable sized***
 
 - Largest/smallest subarray of sum k
-- Largest substring with k distinct characters
-- Length of largest substring with no repeating characters
-- Pick toy
+- [Length of largest substring with k unique characters](https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1)
+- [Length of largest substring with no repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- [Pick toy](https://www.youtube.com/watch?v=seOKHXB_w74&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=12)(An interview problem)
 - Minimum window substring
