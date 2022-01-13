@@ -8,7 +8,7 @@ struct Node {
     int data;
     struct Node* left;   
     struct Node* right;   
-
+    // constructor
     Node(int val)
     {
         data = val;
