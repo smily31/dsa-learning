@@ -153,9 +153,10 @@ int main()
     struct Node *root = new Node(1);
     root->left = new Node(2);
     root->right = new Node(3);
-    root->right->left = new Node(4);
+    root->right->right = new Node(7);
+    root->left->left = new Node(4);
     // call traversal function according to your wish
-    vector<int> v = postorder_1(root);
+    vector<int> v = inorder(root);
     for (auto i : v)
         cout << i << " ";
     return 0;

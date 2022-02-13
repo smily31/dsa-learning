@@ -7,9 +7,11 @@
 // TC - O(N) ASC - O(2N)
 
 // Optimal Approach
-// recursive traversal and whenever we find node->value equals one of given node we will return that Node else return NULL
-// and if from left subtree we get node and from right we get NUll
-// then we will return node
+// recursive traversal - preorder 
+// whenever we find node->value equals one of given node we will return that Node else return NULL
+// and if from any of the subtree we got NULL then we will return other's node 
+// if from both subtrees we get node then we w'll return root as it will be the lca 
+
 // TC - O(N)
 // ASC - O(N)
 

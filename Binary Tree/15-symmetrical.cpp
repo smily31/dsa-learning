@@ -1,7 +1,7 @@
 // Check the Binary Tree is Symmetrical or not
 //    Approach
 // From root->left take it as root for left tree and apply preorder
-// Then take root0>right as root of right tree and apply reverse preorder
+// Then take root->right as root of right tree and apply reverse preorder
 // Because in mirror left becomes right and vice-versa
 // so applying traversal at same time and then checking it value we got to know that tree is symmetrical or not
 // TC - O(N)

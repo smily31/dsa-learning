@@ -1,5 +1,5 @@
 // Convert the Binary Tree to follow Children Sum Property
-// Children Sum Property = node value = sum of left and right child node value
+// Children Sum Property -> node value = sum of left and right child node value
 
 //  1. You can only increment the value of the nodes, in other words, the modified value must be at least equal to the original value of that node.
 //  2. You can not change the structure of the original binary tree.

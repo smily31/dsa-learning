@@ -19,6 +19,9 @@ struct Node
     }
 };
 
+
+// Implementation of bfs only
+
 vector<vector<int>> verticalTraversal(Node *root)
 {
     vector<vector<int>> ans;

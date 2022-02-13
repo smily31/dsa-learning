@@ -16,7 +16,7 @@ struct Node
     }
 };
 
-// using vertical traversal technique to get top view
+// using vertical traversal technique to get bottom view
 // TC - O(N)
 // SC - O(N)
 vector<int> bottomView(Node * root)

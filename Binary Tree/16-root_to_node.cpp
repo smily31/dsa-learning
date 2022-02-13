@@ -1,8 +1,11 @@
-// print the path from root to given node value
+// Print the path from root to given node value
 // Algorithm used - preorder
-// Approach - insert a node in data structure first check if it is equal to given node or not
-// if any times true occurs then return it otherwise
-// go either left or right
+// Approach - insert a node in data structure first 
+// check if it is equal to given node or not
+// if any times true occurs then return it 
+// otherwise go either left or right
+// if false is returned from both then it means path is not ahead so pop that element from 
+// data structure and return false  and control will go to next step
 
 // TC - O(N)
 // ASC - O(H)

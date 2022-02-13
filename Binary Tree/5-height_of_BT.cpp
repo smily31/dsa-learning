@@ -1,6 +1,14 @@
 // Height of Binary Tree 
 // Maximum depth in Binary Tree
 
+// TC - O(N)
+// SC - O(height of tree) ~ O(N)
+
+// Another approach :-
+// Can also use level order traversal to get height
+// maintain a variable "level" which increments whenever you go left or right
+// and the heightest level will be the answer
+
 #include<bits/stdc++.h>
 using namespace std;
 
